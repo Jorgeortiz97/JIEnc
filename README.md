@@ -27,7 +27,7 @@ Each pixel of the image is represented by 3 colors and each color is stored in o
 _Example of uncoded image:_
 ![alt text](https://github.com/Jorgeortiz97/JIEnc/blob/master/doc/uncoded.png?raw=true "Uncoded image")
 
-_Example of uncoded image:_
+_Example of encoded image:_
 ![alt text](https://github.com/Jorgeortiz97/JIEnc/blob/master/doc/encoded.png?raw=true "Encoded image")
 
 Changes are not visible to the naked eye.
