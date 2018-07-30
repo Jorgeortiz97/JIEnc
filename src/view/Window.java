@@ -50,9 +50,9 @@ public class Window extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null,
-						"JIEnc is an application that allows you to encode a message within a PNG image.\n"
-								+ "The first step is to browse a PNG image, then you can encode a message inside the image\n"
-								+ " or decode an existing encoded image.",
+						"JIEnc is an application that allows you to encode a message or a file within a PNG image.\n"
+								+ "The first step is to browse a PNG image, then you can encode a message or a file inside the image\n"
+								+ " or decode an existing image previously encoded.",
 						"Information", JOptionPane.INFORMATION_MESSAGE, icon);
 			}
 		});
@@ -66,10 +66,10 @@ public class Window extends JFrame {
 		JPanel aboutPanel = new JPanel(new BorderLayout());
 		aboutPanel.add(
 				new JLabel("<html>The author of this program is Jorge Ortiz. <br>"
-						+ "You can follow the development of this application in the following link<br>of GitHub:</html>"),
+						+ "You can follow the development of this application in the following link:</html>"),
 				BorderLayout.NORTH);
 		aboutPanel.add(btnPanel, BorderLayout.CENTER);
-		aboutPanel.add(new JLabel("<html><br><font size=2>Current version: 1.0 (release 01 - 03 - 2018)</font></html>",
+		aboutPanel.add(new JLabel("<html><br><font size=2>Current version: 2.0 (release 30 - 07 - 2018)</font></html>",
 				SwingConstants.CENTER), BorderLayout.SOUTH);
 
 		btnLink.addActionListener(new ActionListener() {
@@ -77,7 +77,7 @@ public class Window extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if (Desktop.isDesktopSupported()) {
 					try {
-						Desktop.getDesktop().browse(new URI("https://github.com/Jorgeortiz97/JIEnc"));
+						Desktop.getDesktop().browse(new URI("http://jorgeortizesc.com/other-projects.html"));
 					} catch (IOException | URISyntaxException e1) {
 					}
 				}
